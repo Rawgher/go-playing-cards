@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	// only use := when defining a new variable
@@ -8,10 +10,6 @@ func main() {
 
 	// cards := []string{newCard(), newCard()}
 	cards := newDeck()
-
-	hand, remainingDeck := deal(cards, 5)
-
-	hand.print()
-	remainingDeck.print()
+	fmt.Println(cards.toString())
 
 }
