@@ -41,3 +41,10 @@ func (d deck) print() {
 // slices are arrays that can grow and shrink
 // all things in arrays or slices must be the same type (string, int, bool, float64)
 // [] = slice
+
+// allows us to use type deck and int in the function
+// (deck, deck) says we are expecting to return two values and both are type deck
+func deal(d deck, handSize int) (deck, deck) {
+	// first will return cards up to handSize, second will do the rest of the cards
+	return d[:handSize], d[handSize:]
+}

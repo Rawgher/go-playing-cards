@@ -9,6 +9,9 @@ func main() {
 	// cards := []string{newCard(), newCard()}
 	cards := newDeck()
 
-	cards.print()
+	hand, remainingDeck := deal(cards, 5)
+
+	hand.print()
+	remainingDeck.print()
 
 }
