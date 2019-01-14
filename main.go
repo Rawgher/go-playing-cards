@@ -7,7 +7,9 @@ func main() {
 	//  ex: card = "Five of Diamonds"
 
 	// cards := []string{newCard(), newCard()}
-	cards := newDeck()
-	cards.saveToFile("my_cards")
+	// cards := newDeck()
+	// cards.saveToFile("my_cards")
+	cards := newDeckFromFile("my_cards")
+	cards.print()
 
 }
